@@ -17,9 +17,7 @@ class GreetingForm
                     ->columnSpanFull(),
                 FileUpload::make('image')
                     ->image()
-                    ->disk('public')
                     ->directory('greetings')
-                    ->visibility('public')
                     ->required()
                     ->columnSpanFull(),
             ]);

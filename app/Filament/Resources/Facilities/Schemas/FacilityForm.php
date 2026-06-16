@@ -17,9 +17,7 @@ class FacilityForm
                     ->columnSpanFull(),
                 FileUpload::make('image')
                     ->image()
-                    ->disk('public')
                     ->directory('facilities')
-                    ->visibility('public')
                     ->required()
                     ->columnSpanFull(),
             ]);

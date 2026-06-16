@@ -5,6 +5,8 @@ namespace App\Filament\Resources\Facilities\Tables;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+use Filament\Actions\ViewAction;
+use Filament\Actions\DeleteAction;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -16,7 +18,6 @@ class FacilitiesTable
         return $table
             ->columns([
                 ImageColumn::make('image')
-                    ->disk('public')
                     ->label('Thumbnail'),
                 TextColumn::make('content')
                     ->html()
@@ -35,7 +36,9 @@ class FacilitiesTable
                 //
             ])
             ->recordActions([
+                ViewAction::make(),
                 EditAction::make(),
+                DeleteAction::make(),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([

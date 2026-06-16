@@ -5,6 +5,8 @@ namespace App\Filament\Resources\Footers\Tables;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+use Filament\Actions\ViewAction;
+use Filament\Actions\DeleteAction;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -15,8 +17,7 @@ class FootersTable
     {
         return $table
             ->columns([
-                ImageColumn::make('image')
-                    ->disk('public'),
+                ImageColumn::make('image'),
                 TextColumn::make('link_instagram')
                     ->searchable(),
                 TextColumn::make('link_youtube')
@@ -47,7 +48,9 @@ class FootersTable
                 //
             ])
             ->recordActions([
+                ViewAction::make(),
                 EditAction::make(),
+                DeleteAction::make(),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([

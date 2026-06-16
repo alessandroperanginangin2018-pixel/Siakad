@@ -13,9 +13,7 @@ class CooperationForm
             ->components([
                 FileUpload::make('image')
                     ->image()
-                    ->disk('public')
                     ->directory('cooperations')
-                    ->visibility('public')
                     ->required()
                     ->columnSpanFull(),
             ]);
