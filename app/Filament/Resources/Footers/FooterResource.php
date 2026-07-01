@@ -165,7 +165,6 @@ class FooterResource extends Resource
                 //
             ])
             ->recordActions([
-                \Filament\Actions\ViewAction::make(),
                 \Filament\Actions\EditAction::make(),
                 \Filament\Actions\DeleteAction::make(),
             ])

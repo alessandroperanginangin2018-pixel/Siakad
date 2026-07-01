@@ -83,12 +83,11 @@ class FacilityResource extends Resource
             ->filters([
                 //
             ])
-            ->recordActions([
-                \Filament\Actions\ViewAction::make(),
+            ->actions([
                 \Filament\Actions\EditAction::make(),
                 \Filament\Actions\DeleteAction::make(),
             ])
-            ->toolbarActions([
+            ->bulkActions([
                 \Filament\Actions\BulkActionGroup::make([
                     \Filament\Actions\DeleteBulkAction::make(),
                 ]),
