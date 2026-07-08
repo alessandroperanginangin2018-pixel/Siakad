@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes — Frontend Website B University
+| Web Routes — Frontend Website A Kampus Maju
 |--------------------------------------------------------------------------
 */
 
