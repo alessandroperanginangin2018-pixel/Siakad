@@ -21,17 +21,7 @@
                         </div>
                     @endif
                     
-                    <div class="absolute top-3 right-3">
-                        @if ($book->stock > 0)
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 shadow-sm backdrop-blur-sm bg-green-100/90">
-                                Tersedia
-                            </span>
-                        @else
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 shadow-sm backdrop-blur-sm bg-red-100/90">
-                                Habis
-                            </span>
-                        @endif
-                    </div>
+
                 </div>
                 
                 <div class="p-5 flex flex-col flex-grow">
@@ -41,6 +31,15 @@
                     
                     <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
                         <span class="text-sm text-slate-600 font-medium">Stok: {{ $book->stock }}</span>
+                        @if ($book->stock > 0)
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-100 text-green-700 border border-green-200">
+                                Tersedia
+                            </span>
+                        @else
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-red-100 text-red-700 border border-red-200">
+                                Habis
+                            </span>
+                        @endif
                     </div>
                 </div>
             </div>

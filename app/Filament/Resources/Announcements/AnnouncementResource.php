@@ -26,7 +26,7 @@ class AnnouncementResource extends Resource
     protected static ?string $pluralModelLabel = 'Pengumuman';
     protected static string|\UnitEnum|null $navigationGroup = 'Berita & Kegiatan';
     protected static ?int $navigationSort = 1;
-    protected static ?string $recordTitleAttribute = 'Announcement';
+    protected static ?string $recordTitleAttribute = 'title';
 
     public static function form(Schema $schema): Schema
     {
