@@ -20,6 +20,7 @@
                 <li><a href="{{ route('students') }}"      class="hover:text-white transition-colors">Mahasiswa</a></li>
                 <li><a href="{{ route('announcements') }}" class="hover:text-white transition-colors">Pengumuman</a></li>
                 <li><a href="{{ route('news') }}"          class="hover:text-white transition-colors">Berita</a></li>
+                <li><a href="{{ route('library') }}"       class="hover:text-white transition-colors text-blue-400">Perpustakaan</a></li>
             </ul>
 
             {{-- CTA --}}
@@ -63,6 +64,7 @@
                 <li><a href="{{ route('students') }}"      class="block py-3 px-4 rounded-xl hover:bg-slate-800 hover:text-white transition-all">Mahasiswa</a></li>
                 <li><a href="{{ route('announcements') }}" class="block py-3 px-4 rounded-xl hover:bg-slate-800 hover:text-white transition-all">Pengumuman</a></li>
                 <li><a href="{{ route('news') }}"          class="block py-3 px-4 rounded-xl hover:bg-slate-800 hover:text-white transition-all">Berita</a></li>
+                <li><a href="{{ route('library') }}"       class="block py-3 px-4 rounded-xl hover:bg-slate-800 hover:text-white transition-all text-blue-400">Perpustakaan</a></li>
             </ul>
             <div class="mt-4 px-4">
                 <a href="{{ route('home') }}#kontak"

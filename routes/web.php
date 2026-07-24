@@ -15,3 +15,4 @@ Route::get('/dosen',      [LandingpageController::class, 'lectures'])->name('lec
 Route::get('/mahasiswa',  [LandingpageController::class, 'students'])->name('students');
 Route::get('/pengumuman', [LandingpageController::class, 'announcements'])->name('announcements');
 Route::get('/berita',     [LandingpageController::class, 'news'])->name('news');
+Route::get('/perpustakaan', [App\Http\Controllers\LibraryController::class, 'index'])->name('library');
